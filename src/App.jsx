@@ -6,21 +6,19 @@ function App() {
   return (
     <main className="page">
       <article className="note">
-        <p className="eyebrow">A quick note</p>
-        <h1 className="title">How I&apos;m picturing this</h1>
+        <p className="eyebrow">ご連絡</p>
+        <h1 className="title">進め方について</h1>
 
         <div className="body">
           <p>
-            Hi — let me lay out how I&apos;m picturing this, since I don&apos;t
-            think I explained it clearly before.
+            こんにちは。以前うまく伝えきれていなかったと思うので、こちらの進め方のイメージを改めて整理させてください。
           </p>
 
           <p>
-            I&apos;ll do the searching and the writing. What you&apos;d get from
-            me is a batch like this:
+            案件のリサーチと提案文の作成は、こちらで担当します。お渡しするものは、たとえば次のような形です。
           </p>
 
-          <div className="example" aria-label="Example batch format">
+          <div className="example" aria-label="提案バッチの例">
             <a
               className="job-link"
               href="https://www.lancers.jp/work/detail/5582266"
@@ -29,7 +27,7 @@ function App() {
             >
               https://www.lancers.jp/work/detail/5582266
             </a>
-            <span className="placeholder">[proposal text]</span>
+            <span className="placeholder">【提案文】</span>
             <br />
             <br />
             <a
@@ -40,39 +38,30 @@ function App() {
             >
               https://www.lancers.jp/work/detail/XXXXXXX
             </a>
-            <span className="placeholder">[proposal text]</span>
+            <span className="placeholder">【提案文】</span>
           </div>
 
           <p>
-            One link, one ready-to-go proposal, a few at a time. You open the job
-            page, read what I&apos;ve written, and if you&apos;re comfortable
-            with it, submit it. If you&apos;re not, skip it — no hard feelings
-            either way. Nothing goes out that you haven&apos;t read first.
+            1件のリンクに、そのまま出せる提案文を1本。まとめて数件ずつお送りします。案件ページを開いて内容をご確認いただき、問題なければご投稿ください。合わないものがあればスキップしていただいて構いません。ご確認前に勝手に送ることはありません。
           </p>
 
-          <p>When a client responds, I handle the build.</p>
+          <p>クライアントから返信があったら、実装はこちらで担当します。</p>
 
           <p>
-            One thing I&apos;d ask: please let the client know there&apos;s a
-            developer on the team handling implementation. You on design, me on
-            the build. I&apos;d rather that be out in the open from the start
-            than have it come up later — it&apos;s your account and your
-            reputation on the line, and I don&apos;t want to put that at risk.
+            ひとつお願いがあります。クライアントには、最初の段階で「実装はチームの開発担当が行う」とお伝えいただけますか。デザインはあなた、実装は私、という役割分担です。あとから出てくるより、最初からオープンにしておいた方がよいと思っています。アカウントと信頼はあなたのものですので、そこにリスクを抱えさせたくありません。
           </p>
 
           <p>
-            On the split, let&apos;s talk numbers once the first job actually
-            lands, since it&apos;ll depend on the scope. Happy to hear what you
-            have in mind.
+            報酬の配分については、最初の案件が決まったタイミングで、スコープを見ながら相談できればと思います。ご希望があればぜひ教えてください。
           </p>
 
           <div className="chatwork">
-            <p className="chatwork-label">Let&apos;s chat via Chatwork</p>
+            <p className="chatwork-label">Chatworkでご連絡ください</p>
             <p className="chatwork-id">{CHATWORK_ID}</p>
           </div>
 
           <p className="closing">
-            I&apos;ll send the first batch over this week. Sound good?
+            今週中に、最初の提案セットをお送りします。よろしいでしょうか？
           </p>
         </div>
       </article>
