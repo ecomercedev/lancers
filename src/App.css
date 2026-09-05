@@ -1,0 +1,119 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 1.25rem 3rem;
+}
+
+.note {
+  width: min(640px, 100%);
+  background: linear-gradient(180deg, #fffcf8 0%, #f9f6f0 100%);
+  border: 1px solid var(--paper-edge);
+  box-shadow: var(--shadow);
+  padding: clamp(1.75rem, 4vw, 2.75rem);
+  animation: rise 0.7s ease-out both;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.title {
+  margin: 0 0 1.5rem;
+  font-family: "Fraunces", serif;
+  font-size: clamp(1.65rem, 4vw, 2.1rem);
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--ink);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.body p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+}
+
+.example {
+  margin: 0.25rem 0;
+  padding: 1rem 1.15rem;
+  background: var(--accent-soft);
+  border-left: 3px solid var(--accent);
+  font-size: 0.98rem;
+  color: var(--ink-soft);
+}
+
+.example .job-link {
+  display: block;
+  margin-bottom: 0.35rem;
+  word-break: break-all;
+}
+
+.example .placeholder {
+  color: var(--ink);
+  font-style: italic;
+}
+
+.chatwork {
+  margin-top: 0.5rem;
+  padding: 1.15rem 1.25rem;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.65);
+  animation: rise 0.7s ease-out 0.15s both;
+}
+
+.chatwork-label {
+  margin: 0 0 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.chatwork-id {
+  margin: 0;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--link);
+}
+
+.closing {
+  margin-top: 0.35rem;
+  font-weight: 500;
+  color: var(--ink) !important;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: 1.5rem 1rem 2rem;
+    align-items: flex-start;
+  }
+
+  .body p,
+  .example {
+    font-size: 1rem;
+  }
+}
